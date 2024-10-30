@@ -14,34 +14,39 @@
 
 body {
   font-size: 16px;
+  width: 375px;
+  background-color: rgba(255, 182, 193, 0.17);
 }
 
 h2 {
-  padding: 20px 0px;
+  padding: 5px 0px;
   color: var(--cyan);
+  font-size: 1.1em;
 }
 
 h3 {
   color: var(--bright-yellow);
   margin-bottom: 10px;
+  font-size: 0.9em;
 }
 
 p {
-  line-height: 1.5;
+  line-height: 2;
+  font-size: 0.85em;
+  color: ;
 }
 
 section {
   margin-top: 40px;
-  border: solid 1px black;
-  display: grid;
   max-width: 80%;
   min-height: 60svh;
   margin-inline: auto;
 }
 
 #item1 {
-  background-color: ;
+  background-color: white;
   padding: 1em;
+  border-radius: 5px 5px 0px 0px;
 }
 
 #item2 {
@@ -50,16 +55,19 @@ section {
   flex-direction: column;
   justify-content: center;
   padding: 1em;
+  color: white;
 }
 
 #item3 {
   background-color: hsl(179 62% 43% / 0.8);
   padding: 1em;
+  border-radius: 0px 0px 5px 5px;
 }
 
 #item2 h2,
 #item3 h2 {
   color: white;
+  font-size: 1em;
 }
 
 button {
@@ -68,11 +76,15 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 0.9em;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 80%;
+  width: 90%;
   box-shadow: 1px 3px 5px 0px hsla(0, 0%, 0%, 50%);
+  display: block;
+  margin-inline: auto;
+  height: 3em;
+  margin: 1em;
 }
 
 .button:hover {
@@ -81,4 +93,17 @@ button {
 
 li {
   list-style-type: none;
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+.large-text {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.opacity-text {
+  color: rgba(255, 255, 255, 0.389);
 }
